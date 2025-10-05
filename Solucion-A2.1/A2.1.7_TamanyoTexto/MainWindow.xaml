@@ -1,0 +1,36 @@
+﻿<Window x:Class="A2._1._7_TamanyoTexto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Tamaño de Texto" Height="294" Width="487"
+        Icon="/Recursos/icon.ico">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Opciones de tamaño -->
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+            <RadioButton x:Name="Pequeño" Content="Pequeño" GroupName="Tamanyo" Tag="36" Checked="Tamanyo_Checked" Margin="5"/>
+            <RadioButton x:Name="Mediano" Content="Mediano" GroupName="Tamanyo" Tag="48" Checked="Tamanyo_Checked" Margin="5"/>
+            <RadioButton x:Name="Grande" Content="Grande" GroupName="Tamanyo" Tag="72" Checked="Tamanyo_Checked" Margin="5"/>
+        </StackPanel>
+
+        <!-- Texto de ejemplo -->
+        <TextBlock x:Name="txtEjemplo"
+                   Text="Desarrollo de Interfaces"
+                   FontSize="36"
+                   FontWeight="Bold"
+                   Foreground="PowderBlue"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top" Margin="0,10,0,0" Grid.Row="1">
+            <TextBlock.Effect>
+                <DropShadowEffect Color="Black"
+                                  Direction="320"
+                                  ShadowDepth="4"
+                                  BlurRadius="4"
+                                  Opacity="0.7"/>
+            </TextBlock.Effect>
+        </TextBlock>
+    </Grid>
+</Window>
