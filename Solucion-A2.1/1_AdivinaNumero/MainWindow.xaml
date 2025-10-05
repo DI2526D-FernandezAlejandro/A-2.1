@@ -1,0 +1,27 @@
+﻿<Window x:Class="_1_AdivinaNumero.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Adivina el número" 
+        Height="160" Width="350"
+        Icon="Recursos/icono.ico">
+
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock Text="¿Qué número he pensado?" Margin="0,0,10,0" VerticalAlignment="Center"/>
+            <TextBox x:Name="txtNumero" Width="60" Text="2"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,15,0,0" >
+            <Button x:Name="btnComprobar" Content="Comprobar" Width="100" Margin="0,0,10,0" Click="btnComprobar_Click"/>
+            <Button x:Name="btnReiniciar" Content="Reiniciar" Width="100" Click="btnReiniciar_Click"/>
+        </StackPanel>
+
+        <TextBlock x:Name="lblResultado" 
+                   Margin="0,15,0,0" 
+                   FontSize="14" 
+                   FontWeight="Normal" 
+                   TextAlignment="Center" 
+                   HorizontalAlignment="Center"/>
+    </StackPanel>
+</Window>
+
