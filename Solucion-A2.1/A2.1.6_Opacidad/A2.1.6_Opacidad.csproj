@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>A2._1._6_Opacidad</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Recursos\episodioIV.jpg" />
+    <None Remove="Recursos\episodioV.jpg" />
+    <None Remove="Recursos\episodioVI.jpg" />
+    <None Remove="Recursos\icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Recursos\episodioIV.jpg" />
+    <Resource Include="Recursos\episodioV.jpg" />
+    <Resource Include="Recursos\episodioVI.jpg" />
+    <Resource Include="Recursos\icon.ico" />
+  </ItemGroup>
+
+</Project>
