@@ -1,0 +1,20 @@
+﻿<Window x:Class="A2._1._4_CaracteresLimitados.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Texto con límite de caracteres" Height="250" Width="400"
+        Icon="/Recursos/icon.ico">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- TextBox para escribir el texto -->
+        <TextBox Name="txtContenido" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"
+                 MaxLength="140" TextChanged="txtContenido_TextChanged"/>
+
+        <!-- Contador de caracteres -->
+        <TextBlock Name="txtContador" Grid.Row="1" HorizontalAlignment="Right" Margin="0,5,0,0"
+                   FontWeight="Bold" Text="0 / 140"/>
+    </Grid>
+</Window>
